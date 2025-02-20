@@ -50,7 +50,14 @@ void main() {
   print('To string: ${num1.toString()}'); //-15.75
   print('Truncated value of ${num1}: ${num1.truncate()}'); //-15
 
- 
+  print("Strings:");
+  String x2 = "Hello";
+  String y2 = "Suhaila";
+
+  String z2 = x2 + ' ' + y2;
+  print(z2);
+
+  
 
 }
 
