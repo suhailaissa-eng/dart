@@ -57,7 +57,12 @@ void main() {
   String z2 = x2 + ' ' + y2;
   print(z2);
 
+  //Booleans
+  bool isOn = true;
+  bool isOof = false;
+
   
+
 
 }
 
