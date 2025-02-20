@@ -134,7 +134,90 @@ void main() {
   print(items);
   print(items.runtimeType);
 
-  
+  //Maps
+  Map employeeList = {001: "John Doe", 
+                      002: "Jane Doe"};
+
+var gifts = {
+  // Key:    Value
+  'first': 'partridge',
+  'second': 'turtledoves',
+  'fifth': 'golden rings',
+};
+
+var nobleGases = {2: 'helium', 10: 'neon', 18: 'argon'};
+
+var gifts2 = Map<String, String>();
+gifts['first'] = 'partridge';
+gifts['second'] = 'turtledoves';
+gifts['fifth'] = 'golden rings';
+gifts['fourth'] = 'calling birds';
+
+var nobleGases2 = Map<int, String>();
+nobleGases[2] = 'helium';
+nobleGases[10] = 'neon';
+nobleGases[18] = 'argon';
+
+
+final constantMap = const {2: 'helium', 10: 'neon', 18: 'argon'};
+
+// constantMap[2] = 'Helium'; // This line will cause an error.
+
+
+
+  Map<String, int> studentGrades = { 
+    'Alice': 90, 
+    'Bob': 85, 
+    'Charlie': 88 
+  };
+
+  var map1 = <int, double>{1: 90, 2: 99.2}; 
+  var map2 = {'A': 90, 'B': 99.2}; // Fixed closing bracket
+
+  print(studentGrades); // Output: {Alice: 90, Bob: 85, Charlie: 88}
+  print(map1); // Output: {1: 90.0, 2: 99.2} (90 is promoted to 90.0 because the values are doubles)
+  print(map2); // Output: {A: 90, B: 99.2}
+
+
+print(studentGrades); // Output: (Alice: 90, Bob: 85, Charlie: 88} 
+// Accessing a Value 
+print(studentGrades ['Alice']); // Output: 90 
+// Adding a Key-Value Pair 
+studentGrades ['David'] = 92; 
+print(studentGrades); // Output: (Alice: 90, Bob: 85, Charlie: 88, David: 92) 
+// Updating a Value 
+studentGrades['Alice'] = 95; 
+print(studentGrades); // Output: (Alice: 95, Bob: 85, Charlie: 88, David: 92) 
+// Removing a Key-Value Pair 
+studentGrades.remove('Bob'); 
+print(studentGrades); // Output: (Alice: 95, Charlie: 88, David: 92} 
+// Checking if a Key Exists 
+print(studentGrades.containsKey('Charlie')); // Output: true 
+// Checking if a Value Exists 
+print(studentGrades.containsValue (88)); // Output: true 
+// Iterating Over Keys 
+print('Keys:');
+
+
+
+Map<String, int> scores = {'Bob': 36};
+for (var key in ['Bob', 'Rohan', 'Sophena']) {
+  print(scores.putIfAbsent(key, () => key.length));
+}
+scores['Bob'];      // 36
+scores['Rohan'];    //  5
+scores['Sophena'];  //  7
+
+ // Map<String, int> map1 = null; Error: map1 is not nullable
+ //Map<String, int> map2 = {"apple": null}; Error: map values (int) is not nullable
+
+
+//  In Dart, a List itself can be null (List<T>?).
+// A List’s elements can be null (List<T?>).
+
+
+List<int>? nullableList = null; // Entire list is null 
+List<int?> listWithNullableValues = [1, null, 3]; // Elements can be null
 
 
 }
