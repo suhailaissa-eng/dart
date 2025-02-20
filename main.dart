@@ -227,6 +227,11 @@ void main() {
   print(number11.isNotEmpty);
 
   number11.clear();
-    print(number11.isEmpty);
+  print(number11.isEmpty);
 
+  //Type inference and annotation
+
+  var x5 = 10; // instead of int x = 10;
+  var y5 = 1.2; // instead of double y = 1.2;
+  //	x = 1.1; /Syntax error because x is int and does not accept double
 }
