@@ -285,4 +285,65 @@ void main() {
   var num23 = 5;
   var result2 = num12 + num23 * 2 - 3;
   print(result2);
+
+  //String Operators
+
+  const string = 'Dart is fun';
+  print(string.substring(0, 4));
+
+  const string1 = 'Dart ' + 'is' + ' fun';
+  print(string1); // 'Dart is fun'
+
+  const string2 =
+      'Dart '
+      'is'
+      ' fun';
+  print(string2); // 'Dart is fun'
+
+  const string3 = 'dartlang';
+  print('$string3 has ${string3.length} letters');
+
+  var fName = 'Suhaila';
+  var lName = "Issa";
+  var fullName = 'Name: ${fName} $lName';
+  print(fullName);
+
+  const string4 = 'Dart';
+  final charAtIndex = string[0];
+  print(charAtIndex); // 'D'
+
+  const string5 = 'Hello, Dart World!';
+  bool hasDart = string5.contains('Dart');
+  bool endsWithWorld = string5.endsWith('World!');
+  print('Output: $hasDart'); // Output: true
+  print('Output: $endsWithWorld'); // Output: true
+
+  String text = " Hello, Dart World! ";
+  print("toLowerCase: ${text.toLowerCase()}"); // Output: hello, dart world!
+  print("toUpperCase: ${text.toUpperCase()}"); // Output: HELLO, DART WORLD!
+  print("trim: '${text.trim()}'"); // Output: "Hello, Dart World!"
+  String otherText = "Hello, Dart World!";
+  print(
+    "compareTo: ${text.trim().compareTo(otherText)}",
+  ); // Output: 0 (since they are equal)
+  print(
+    "replaceAll: ${text.replaceAll("Dart", "Flutter")}",
+  ); // Output: Hello, Flutter World!
+  var words = text.split(" ");
+  print(
+    "split: $words",
+  ); // Output: ["", "", "Hello,", "Dart", "World!", "", ""]
+  print("substring: '${text.trim().substring(7, 11)}'"); // Output: "Dart"
+  var num = 123;
+  print("toString: ${num.toString()}"); // Output: "123"
+  print(
+    "codeUnitAt: ${text.codeUnitAt(0)}",
+  ); // Output: 32 (ASCII value for space)
+
+  String text2 = "Dart Programming";
+  print(text2.indexOf('Programming'));
+  print(text2[5]);
+
+  String text3 = "Dart";
+  print("Hello, $text3!");
 }
