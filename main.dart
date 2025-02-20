@@ -234,4 +234,55 @@ void main() {
   var x5 = 10; // instead of int x = 10;
   var y5 = 1.2; // instead of double y = 1.2;
   //	x = 1.1; /Syntax error because x is int and does not accept double
+
+  //Basic Operators
+  var x6 = 3 + 4 + 78;
+  print(x6);
+  var x7 = (3 * 8) - 9;
+  print(x7);
+
+  //assignment operater
+  x7 = 7;
+
+  //compound assignment operater
+  x6 += 3;
+
+  //Logical Operater
+  print(x == 3 && y == 9 || x6 == 5);
+
+  int a;
+  int b;
+
+  a = 0;
+  b = ++a; // Increment a before b gets its value.
+  assert(a == b); // 1 == 1
+
+  a = 0;
+  b = a++; // Increment a after b gets its value.
+  assert(a != b); // 1 != 0
+
+  a = 0;
+  b = --a; // Decrement a before b gets its value.
+  assert(a == b); // -1 == -1
+
+  a = 0;
+  b = a--; // Decrement a after b gets its value.
+  assert(a != b); // -1 != 0
+
+  assert(2 == 2);
+  assert(2 != 3);
+  assert(3 > 2);
+  assert(2 < 3);
+  assert(3 >= 3);
+  assert(2 <= 3);
+
+  var num11 = 10;
+  var num22 = 5;
+  var result = num11 < num22 || ++num11 < num22;
+  print(result);
+
+  var num12 = 10;
+  var num23 = 5;
+  var result2 = num12 + num23 * 2 - 3;
+  print(result2);
 }
