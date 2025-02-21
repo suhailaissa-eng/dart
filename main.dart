@@ -364,4 +364,38 @@ void main() {
     print(j);
     j++;
   }
+
+  //switch
+  var suspect = "Bob Johnson";
+  switch (suspect) {
+    case "Michael Bane":
+      // execute this code block if the suspect is Michael Bane
+      print("Michael Bane is the culprit");
+      break;
+    case "Janet Smith":
+      // execute this code block if the suspect is Janet Smith
+      print("Janet Smith is the culprit");
+      break;
+    case "Bob Johnson":
+      print("Bob Johnson is the culprit");
+      // execute this code block if the suspect is Bob Johnson
+      break;
+    default:
+      print("Please provide a suspect.");
+    // execute this code if no suspect is provided
+  }
+
+  var numbera = 2;
+
+  switch (numbera) {
+    case 1:
+      print("1");
+    case 2:
+      print("2");
+    case 3:
+      print("3");
+      break;
+    default:
+      print("Invalid number");
+  }
 }
