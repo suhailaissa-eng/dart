@@ -346,4 +346,10 @@ void main() {
 
   String text3 = "Dart";
   print("Hello, $text3!");
+
+  //If statment
+  var tem = 30;
+  if (tem > 23) {
+    print("yes");
+  }
 }
