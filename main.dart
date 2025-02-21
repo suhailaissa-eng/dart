@@ -352,4 +352,16 @@ void main() {
   if (tem > 23) {
     print("yes");
   }
+
+  //loops
+
+  for (var i = 0; i < 5; i++) {
+    print(i);
+  }
+
+  var j = 0;
+  while (j < 5) {
+    print(j);
+    j++;
+  }
 }
